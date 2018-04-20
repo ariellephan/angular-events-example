@@ -1,0 +1,13 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+	<p>Update parent button by clicking on another parent button</p>
+	<button (click)="updateLockClass()">Click to update</button>
+	<button type="button" [ngClass]="lockClass">Button with "lockClass"</button>
+	<br/>
+	<br/>
+	<p>Updating child button by updating parent value that gets parsed into child component</p>
+	<app-child [childMessage]="parentMessage"></app-child>
+	<input [(ngModel)]="parentMessage">
+</div>
+
+
